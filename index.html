@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080f2b">
+  <meta name="description" content="A little universe made for Valu. Feliz cumpleaños.">
+  <title>THE INFINITE JOURNEY — For Valu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stars stars-a" aria-hidden="true"></div><div class="stars stars-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="The Infinite Journey, inicio"><span class="brand-mark">✦</span><span>THE INFINITE JOURNEY</span></a>
+    <div class="top-actions"><span class="top-date">25 · 11 · 2026</span><button class="icon-button sound-toggle" id="soundToggle" aria-label="Activar o desactivar sonidos" title="Sonido"><span id="soundIcon">♪</span></button></div>
+  </header>
+
+  <main id="app">
+    <section class="screen active" id="home" aria-labelledby="heroTitle">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A BIRTHDAY JOURNEY <span class="eyebrow-line"></span></div>
+        <div class="book-scene" aria-hidden="true">
+          <div class="book-glow"></div><div class="book">
+            <div class="book-cover"><div class="cover-border"><span class="cover-star">✧</span><span class="cover-small">A LITTLE UNIVERSE FOR</span><span class="cover-name">Valu</span><span class="cover-rule"></span><span class="cover-sub">THE INFINITE JOURNEY</span><span class="cover-star bottom-star">✦</span></div></div>
+            <div class="book-pages"></div>
+          </div>
+          <span class="floating-star fs1">✦</span><span class="floating-star fs2">✧</span><span class="floating-star fs3">·</span>
+        </div>
+        <p class="hero-kicker">A world of little things, big dreams, and endless possibilities.</p>
+        <h1 id="heroTitle">Your universe<br><em>is waiting.</em></h1>
+        <p class="hero-copy">Hay mundos enteros dentro de una persona. Este pequeño viaje es una invitación a descubrir algunos de los tuyos.</p>
+        <button class="primary-button" id="beginJourney">OPEN THE BOOK <span>↗</span></button>
+        <p class="tiny-note">Made with care · For Valu</p>
+      </div>
+      <div class="scroll-hint"><span></span> A JOURNEY IN 8 CHAPTERS</div>
+    </section>
+
+    <section class="screen" id="chapters" aria-labelledby="chaptersTitle">
+      <div class="section-heading"><div class="eyebrow">THE ATLAS OF YOU</div><h2 id="chaptersTitle">Choose a <em>world.</em></h2><p>Podés recorrerlos en el orden que quieras. No hay prisa.</p></div>
+      <div class="chapter-grid" id="chapterGrid"></div>
+      <div class="chapter-footer"><span>✦</span> EVERY WORLD HAS A STORY <span>✦</span></div>
+    </section>
+
+    <section class="screen chapter-screen" id="chapterView" aria-live="polite">
+      <div class="chapter-topline"><button class="text-button" id="backToMap">← CHAPTERS</button><span id="chapterCounter">01 / 08</span></div>
+      <article class="chapter-article">
+        <div class="chapter-art" id="chapterArt"><div class="art-orb"></div><div class="art-symbol" id="artSymbol">✧</div><div class="art-rings"></div></div>
+        <div class="chapter-text"><div class="eyebrow" id="chapterEyebrow">CHAPTER 01</div><h2 id="chapterTitle">The Beginning</h2><p class="chapter-lead" id="chapterLead"></p><div class="chapter-body" id="chapterBody"></div><div class="chapter-interaction" id="chapterInteraction"></div><div class="chapter-controls"><button class="secondary-button" id="prevChapter">← Previous</button><button class="primary-button" id="nextChapter">Next world <span>→</span></button></div></div>
+      </article>
+    </section>
+
+    <section class="screen" id="finalLetter">
+      <div class="letter-wrap">
+        <div class="eyebrow">A MESSAGE BEYOND THE STARS</div>
+        <div class="letter-card"><div class="letter-top">✦ &nbsp; YOUR SPACE, VALU &nbsp; ✦</div><h2>For the universe<br><em>that is you.</em></h2>
+          <div class="letter-copy" id="letterCopy">
+            <p>Valu,</p>
+            <p>Había empezado a preparar algo especial para tu cumpleaños. Pero cuando me dijiste que preferías que dejáramos de hablar, decidí pausarlo porque quería respetar lo que sentías y necesitabas en ese momento.</p>
+            <p>Con el tiempo decidí terminarlo. No espero nada a cambio, ni una respuesta especial. Simplemente quería regalarte algo hecho con cariño, pensando en todas esas pequeñas cosas que hacen que tu mundo sea único.</p>
+            <p>Ojalá este nuevo año te encuentre descubriendo lugares, aprendiendo cosas que te den curiosidad, creando proyectos increíbles, cantando, bailando y persiguiendo todo eso que te entusiasma.</p>
+            <p>Que nunca te falten motivos para explorar, personas que te valoren de verdad y momentos que te hagan sonreír.</p>
+            <p class="signature">Feliz cumpleaños, Valu. <span>✦</span></p>
+          </div>
+          <div class="letter-bottom">WITH CARE, FROM ALEXANDRIA TO YOUR UNIVERSE</div>
+        </div>
+        <div class="wish-panel"><div class="eyebrow">YOUR SPACE, VALU</div><h3>And now, the universe is listening.</h3><p class="wish-intro">Si querés, podés dejar un deseo, contarme una aventura que soñás vivir o simplemente escribir algo. No hace falta responder todo.</p>
+          <form id="wishForm">
+            <label>¿Qué deseo te gustaría cumplir este año?<textarea name="wish" rows="2" placeholder="Un sueño, una meta, algo que te ilusione..."></textarea></label>
+            <label>¿Qué aventura te gustaría vivir algún día?<textarea name="adventure" rows="2" placeholder="Un lugar, una experiencia, una locura linda..."></textarea></label>
+            <label>¿Hay algo que quieras contarme?<textarea name="message" rows="3" placeholder="Lo que quieras compartir..."></textarea></label>
+            <button class="primary-button" type="submit">SEND A LITTLE MESSAGE <span>↗</span></button>
+            <p class="form-note" id="formNote">Responder es completamente opcional. Si enviás algo, quien creó este sitio podrá leerlo.</p>
+          </form>
+        </div>
+        <button class="text-button restart-button" id="restartJourney">↶ BACK TO THE BEGINNING</button>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" id="bottomNav" aria-label="Navegación principal">
+    <button data-nav="home" class="nav-item active"><span>⌂</span><small>HOME</small></button>
+    <button data-nav="chapters" class="nav-item"><span>✧</span><small>CHAPTERS</small></button>
+    <button data-nav="finalLetter" class="nav-item"><span>✉</span><small>LETTER</small></button>
+  </nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
